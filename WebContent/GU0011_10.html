@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>取引先検索画面</title>
+<!-- JS/CSSはここに記入する -->
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/CommonJS/CommonFnc.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/GU0011_10.js"></script>
+
+<link rel="stylesheet" href="/PRWebApplication2/css/top.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/Parts.css">
+
+</head>
+<body onload="fncLoad()">
+<!--
+*****************************************************
+*取引先検索画面										*
+*GU0011_10.html										*
+*作成日：2019/12/14									*
+*													*
+*													*
+*****************************************************
+ -->
+<div>
+	<p class="Title001">顧客検索画面</p>
+	<p class="Title003">下記の欄に条件を記入して検索ボタンを押して下さい</p>
+		<p>取引先ＩＤ<input type="text" id="idSerchTorihikiID"></p>
+		<p>取引先名<input type="text" id="idSerchTorihikiNM"></p>
+		<p>納品先名<input type="text" id="idSerchNouhinNM">
+		<input type="button" value="検　索" onClick="fncSerchBtn()">
+		<input type="button" value="キャンセル" onClick="fncCancelBtn()"></p>
+</div>
+<div id="result">
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品検索画面</title>
+<!-- JS/CSSはここに記入する -->
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/CommonJS/CommonFnc.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/GU0011_21.js"></script>
+
+<link rel="stylesheet" href="/PRWebApplication2/css/top.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/Parts.css">
+</head>
+<body>
+<div>
+	<p class="Title001">商品検索画面</p>
+	<p class="Title003">下記の欄に条件を記入して検索ボタンを押して下さい</p>
+	<p>商品ＩＤ<input type="text" id="idSerchShohinID"></p>
+	<p>商品名<input type="text" id="idSerchShohinNM"></p>
+	<table border="0">
+		<tr>
+			<td  style="width:500px; text-align:right;">
+				<input type="button" class="serch_btn" value="検　索" onClick="fncSerchBtn()">
+				<input type="button" class="delete_btn" value="キャンセル" onClick="fncCancelBtn()">
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="result" style="height:600px; overflow-y:scroll;">
+</div>
+</body>
+</html>

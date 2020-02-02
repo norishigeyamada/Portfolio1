@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>受注商品編集画面（新規注文）</title>
+<!-- JS/CSSはここに記入する -->
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/CommonJS/CommonFnc.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/GU0011_20.js"></script>
+
+<link rel="stylesheet" href="/PRWebApplication2/css/top.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/Parts.css">
+</head>
+<body onLoad="fncLoad()">
+<!--
+*****************************************************
+*受注商品編集画面（新規注文）						*
+*GU0011_20.html										*
+*作成日：2020/01/02									*
+*													*
+*													*
+*****************************************************
+ -->
+
+<form>
+	<p class="Title001">受注商品編集画面</p>
+	<p class="Title004">ここは受注商品の追加・数量の記入を行う画面です</p>
+	<p class="Title004">新規に商品を追加する場合は追加ボタンを押して</p>
+	<p class="Title004">追加する商品を検索・選択して下さい。</p>
+	<div style = "margin-left:500px;">
+		<input type="button" class="editbutton3" value="追　加" onclick="fncMoveShohinSerch()">
+		<input type="button" class="editbutton4" value="確　定" onclick="fncCommit()">
+	</div>
+
+<!-- 受注商品一覧 -->
+	<div id="shohinEdit"  style="height:670px; overflow-y:scroll;">
+	</div>
+
+</form>
+</body>
+</html>

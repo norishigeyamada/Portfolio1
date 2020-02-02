@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/*ここではボタンや各種オブジェクトのStyleを設定します*/
+
+/*ボタン設定*/
+.menu_btn{
+	color:white;
+	background-color:red;
+	border-radius:10px;
+	font-size:16px;
+	width:150px;
+	height:30px;
+}
+
+.menu_btn:hover{
+	color:black;
+	background-color: aqua;
+}
+
+.delete_btn{
+	color:white;
+	background-color:red;
+	border-radius:10px;
+	font-size:14px;
+	font-weight:bold;
+	width:80px;
+	height:25px;
+}
+
+.delete_btn:hover{
+	color:black;
+	background-color: #ff80ff;
+}
+
+.serch_btn{
+	color:white;
+	background-color:#63c600;
+	border-radius:10px;
+	font-size:14px;
+	font-weight:bold;
+	width:80px;
+	height:25px;
+}
+
+.serch_btn:hover{
+	color:white;
+	background-color: green;
+}
+
+/*編集ボタン*/
+/*Divタグの設定*/
+.editbuttondiv1{
+	margin-left:865px;
+}
+/*ボタンの設定*/
+.editbutton1{
+	height:40px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background: radial-gradient(white,blue);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton1:hover{
+	height:40px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background: radial-gradient(white,aqua);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton2{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background: radial-gradient(white,blue);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton2:hover{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background: radial-gradient(white,aqua);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton3{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background:linear-gradient(to top,white,aqua,white);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton3:hover{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background:linear-gradient(to top,white,#00ff33,white);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton4{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background:linear-gradient(to top,white,lime,white);
+	color:brack;
+	border-color:black;
+}
+
+.editbutton4:hover{
+	height:30px;
+	width:100px;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	background:linear-gradient(to top,white,green,white);
+	color:white;
+	border-color:black;
+}
+
+.k_table{
+	background:linear-gradient(90deg,#e0e0e0, white);
+	font-weight:bold;
+	font-size:16px;
+}
+.table_data{
+	width:500px;
+}
+
+
+.o_memo{
+	font-size:16px;
+}
+
+.nod_h2 , .nou_h2{
+	font-weight:bold;
+	font-style:italic;
+	text-align:left;
+	text-decoration:underline;
+	font-size:18px;
+}
+
+.label1{
+	display:block;
+	float:left;
+	font-weight:bold;
+	text-decoration:underline;
+	font-size:18px;
+	width:80px;
+}
+
+/******************************************/
+/*タイトルのCSS*/
+/******************************************/
+.Title001{
+	font-family:"YuMingho";
+	font-size:24px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline overline;
+	letter-spacing:2em;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 4px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.Title002{
+	font-family:"YuMingho";
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;
+	letter-spacing:2em;
+	text-indent:1em;
+	margin-bottom: 0;
+}
+.Title003{
+	font-family:"YuMingho";
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;
+	text-indent:1em;
+}
+
+.Title004{
+	font-family:"YuMingho";
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;
+	text-indent:1em;
+	margin:0;
+}
+
+/******************************************/
+/*Tableの設定を行っていく*/
+/******************************************/
+/*Table0001*/
+/*取引先情報出力テーブル*/
+	.Table001{
+		margin-left:2em;
+		border:double 10px #336666;
+
+	}
+	.t001th{
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		background:black;
+		width:200px;
+		border-style:none;
+	}
+	.t001td{
+		font-size:16px;
+		font-weight:normal;
+		color:black;
+		background:whitle;
+		width:700px;
+	}
+	.t001td_text{
+		font-size:16px;
+		font-weight:normal;
+		color:black;
+		background:whitle;
+		width:700px;
+		border-style:none;
+	}
+
+	.t001td_textarea{
+		font-size:16px;
+		font-weight:normal;
+		color:black;
+		background:whitle;
+		width:700px;
+		border-style:none;
+	}
+	.t001td_no{
+		font-size:16px;
+		font-weight:bold;
+		color:black;
+		background:whitle;
+		width:70px;
+	}
+	.t001td_label{
+		font-size:16px;
+		font-weight:bold;
+		color:black;
+		background:whitle;
+		width:15px;
+		text-align:center;
+		border:none;
+	}
+
+/*Table002*/
+/*取引先情報検索結果出力テーブル*/
+	.Table002{
+		margin-left:1em;
+
+	}
+	.t002thTorihiki{
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		background:green;
+		width:250px;
+		border:double 2px ;
+	}
+	.t002thNouhin{
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		background:green;
+		width:250px;
+		border:double 2px ;
+	}
+	.t002thSoufu{
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		background:green;
+		width:600px;
+		border:double 2px ;
+	}
+	.t002thBtn{
+		font-size:16px;
+		font-weight:bold;
+		color:white;
+		background:green;
+		width:100px;
+		border:double 2px ;
+	}
+	.t002td1{
+		font-size:14px;
+		font-weight:normal;
+		background:whitle;
+	}
+	.t002td2{
+		font-size:14px;
+		font-weight:normal;
+		background:#ccffff;
+	}
+
+	.t002tdBtn{
+		vertical-align: middle;
+		text-align:center;
+	}
+	.t002Btn{
+		font-size:14x;
+		font-weight:bold;
+		vertical-align: middle;
+		background:radial-gradient(aqua 30%, white 60%);
+		width:80px;
+		border-radius:10px;
+		border:redge 3px black;
+	}
+
+	.t002Btn:hover{
+		font-size:14x;
+		font-weight:bold;
+		vertical-align: middle;
+		color:white;
+		background:radial-gradient(blue 50%, white 80%);
+		width:80px;
+		border-radius:10px;
+		border:redge 3px black;
+	}
+
+/******************************************/
+/*日付項目の設定を行う*/
+/******************************************/
+/*date001*/
+	.date001label{
+		font-weight:bold;
+		width:200px;
+		font-size:18px;
+	}
+	.date001year{
+		width:50px;
+		font-size:18px;
+	}
+	.date001month{
+		width:25px;
+		font-size:18px;
+	}
+	.date001day{
+		width:25px;
+		font-size:18px;
+	}
+
+
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- JS/CSSはここに記入する -->
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JQuery/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/DatePicker/jquery-ui.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/DatePicker/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/DatePicker/jquery.ui.datepicker-ja.min.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/CommonJS/CommonFnc.js"></script>
+<script type="text/javascript" src="/PRWebApplication2/JS/GU0011_00.js"></script>
+
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.min.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.structure.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.structure.min.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.theme.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/DatePicker/jquery-ui.theme.min.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/top.css">
+<link rel="stylesheet" href="/PRWebApplication2/css/Parts.css">
+
+</head>
+<body onload="fncLoad()">
+<!--
+*****************************************************
+*新規注文初期表示画面								*
+*GU0011_00.html										*
+*作成日：2019/11/25									*
+*													*
+*													*
+*****************************************************
+ -->
+<form>
+	<p class="Title001">新規注文</p>
+	<table border="0">
+		<tr>
+			<td>
+				<p class="Title002">取引先情報</p>
+			</td>
+			<td style ="width:640px; text-align:right; vertical-align:bottom;">
+				<input class="editbutton2"type="button" value="編集" onclick="fncMoveTorihikiSerch()">
+			</td>
+		</tr>
+	</table>
+	<table class="Table001" border="1">
+		<tr>
+			<td class="t001th">取引先名</td>
+			<td class="t001td"><input type="text" class="t001td_text" value="" readonly id="idTorihikiNM" ></td>
+		</tr>
+		<tr>
+			<td class="t001th">納品先名</td>
+			<td class="t001td"><input type="text" class="t001td_text" value=""  readonly id="idNouhinNM"></td>
+		</tr>
+		<tr>
+			<td class="t001th">送付先</td>
+			<td class="t001td">
+				<textarea class="t001td_textarea" rows="4" cols="90" readonly style="overflow:auto;" id="idNouhinAddress">
+				</textarea>
+			</td>
+		<tr>
+			<td class="t001th">送付先電話番号</td>
+			<td class="t001td">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinTel1">
+				<input type="text" class="t001td_label" value="－">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinTel2">
+				<input type="text" class="t001td_label" value="－">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinTel3">
+			</td>
+		</tr>
+		<tr>
+			<td class="t001th">送付先ＦＡＸ番号</td>
+			<td class="t001td">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinFax1">
+				<input type="text" class="t001td_label" value="－">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinFax2">
+				<input type="text" class="t001td_label" value="－">
+				<input type="text" class="t001td_no" value=""  maxlength = 5 readonly id="idNouhinFax3">
+			</td>
+		</tr>
+		<tr>
+			<td class="t001th">送付先ＭＡＩＬＡＤＤＲＥＳＳ</td>
+			<td class="t001td"><input type="text" class="t001td_text" value=""  readonly id="idNouhinMail"></td>
+		</tr>
+		<tr>
+			<td class="t001th">備　考</td>
+			<td class="t001td"><textarea class="t001td_textarea" id ="idBikou" rows="4" cols="200"></textarea></td>
+		</tr>
+	</table>
+
+	<div style="margin-top:0px; margin-bottom:0px;">
+		<ul>
+			<li>
+				<label class="date001label">受注日　：</label>
+				<input class="date001year" type="text" value="" id="idorderyear" maxlength="4" /> 年
+				<input class="date001month" type="text" value="" id="idordermonth" maxlength="2"/> 月
+				<input class="date001day" type="text" value="" id="idorderdate" maxlength="2" /> 日
+				<input type="text" value="" class="datepicker2" style="display:none;" />
+				<label class="date001label">　・　納　期　 ：</label>
+				<input class="date001year" type="text" value="" id="idnoukiyear" maxlength="4" /> 年
+				<input class="date001month" type="text" value="" id="idnoukimonth" maxlength="2"/> 月
+				<input class="date001day" type="text" value="" id="idnoukidate" maxlength="2" /> 日
+				<input type="text" value="" class="datepicker3" style="display:none;" />
+			</li>
+		</ul>
+	</div>
+	<table border="0" style="margin-top:0px;">
+		<tr>
+			<td>
+				<p class="Title002">商品受注情報</p>
+			</td>
+			<td style ="width:500px; text-align:right; vertical-align:bottom;">
+				<input class="editbutton2"type="button" value="編集" onclick="fncMoveShohinEdit()">
+			</td>
+		</tr>
+	</table>
+	<div id="shohinList" style="padding-left:2em;">
+	</div>
+
+	<table border="0" style="padding-left:2em;">
+		<tr>
+			<td style="width:750px;">
+			</td>
+			<td>
+				<input  class = "editbutton4" type ="button" style=""value ="登　録" onClick="fncTouroku()">
+			</td>
+		</tr>
+	</table>
+
+</form>
+</body>
+</html>
